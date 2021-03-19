@@ -27,7 +27,11 @@ export default class Patrol extends EnemyState {
         this.routeIndex = 0;
     }
 
-    onEnter(options: Record<string, any>): void {}
+    onEnter(options: Record<string, any>): void {
+        this.owner.pathfinding = true;
+        this.currentPath = this.getNextPath();
+        //this.currentPath = this.owner.getScene().getNavigationManager().getPath(hw3_Names.NAVMESH, this.owner.position, options.target);
+    }
 
     handleInput(event: GameEvent): void {
         if(event.type === hw3_Events.SHOT_FIRED){
@@ -56,6 +60,13 @@ export default class Patrol extends EnemyState {
         // If the enemy sees the player, start attacking
         if(this.parent.getPlayerPosition() !== null){
             this.finished(EnemyStates.ATTACKING);
+        }
+        if(this.currentPath.isDone()){
+            this.currentPath = this.getNextPath();
+        } else {
+            this.owner.moveOnPath(this.parent.speed * deltaT, this.currentPath);
+            this.owner.rotation = Vec2.UP.angleToCCW(this.currentPath.getMoveDirection(this.owner));
+
         }
     }
 

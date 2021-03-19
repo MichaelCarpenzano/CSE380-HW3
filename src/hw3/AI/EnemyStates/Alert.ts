@@ -24,6 +24,15 @@ export default class Alert extends EnemyState {
     // Receives options.target
     onEnter(options: Record<string, any>): void {
         this.alertTimer.start();
+
+        // Go to the target position if not already there
+        if(!(this.owner.position.distanceSqTo(options.target) < 8*8)){
+            // We need a new route
+            this.owner.pathfinding = true;
+            this.path = this.owner.getScene().getNavigationManager().getPath(hw3_Names.NAVMESH, this.owner.position, options.target);
+        } else {
+            this.owner.pathfinding = false;
+        }
     }
 
     handleInput(event: GameEvent): void {
@@ -46,6 +55,14 @@ export default class Alert extends EnemyState {
 
         if(this.parent.getPlayerPosition() !== null){
             this.finished(EnemyStates.ATTACKING);
+        }
+        
+        if(this.path.isDone()){
+            this.owner.pathfinding = false;
+        } else {
+            this.owner.moveOnPath(this.parent.speed * deltaT, this.path);
+            this.owner.rotation = Vec2.UP.angleToCCW(this.path.getMoveDirection(this.owner));
+
         }
     }
 
