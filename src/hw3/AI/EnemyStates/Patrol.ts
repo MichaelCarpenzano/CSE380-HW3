@@ -30,7 +30,6 @@ export default class Patrol extends EnemyState {
     onEnter(options: Record<string, any>): void {
         this.owner.pathfinding = true;
         this.currentPath = this.getNextPath();
-        //this.currentPath = this.owner.getScene().getNavigationManager().getPath(hw3_Names.NAVMESH, this.owner.position, options.target);
     }
 
     handleInput(event: GameEvent): void {
