@@ -77,7 +77,7 @@ export default class hw3_scene extends Scene {
         let tilemapLayers = this.add.tilemap("level");
 
         // Get the wall layer
-        // HOMEWORK 3 - TODO
+        // HOMEWORK 3 - TODO - DONE
         /*
             Modify this line if needed.
             
@@ -160,7 +160,7 @@ export default class hw3_scene extends Scene {
         }
     }
 
-    // HOMEWORK 3 - TODO
+    // HOMEWORK 3 - TODO - DONE
     /**
      * This function spawns in all of the items in "items.json"
      * 
@@ -211,7 +211,7 @@ export default class hw3_scene extends Scene {
         this.items.push(healthpack);
     }
 
-    // HOMEWORK 3 - TODO
+    // HOMEWORK 3 - TODO - DONE
     /**
      * You'll want to have a new weapon type available in your program - a laser gun.
      * Carefully look through the code for how the other weapon types (knife and pistol)
