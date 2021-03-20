@@ -1,5 +1,5 @@
 {
-    "numEnemies": 8,
+    "numEnemies": 20,
     "enemies": [
         {
             "position": [224, 384],
@@ -20,33 +20,111 @@
             "health": 5
         },
         {
-            "position": [448, 807],
+            "position": [416, 816],
             "mode": "guard",
-            "guardPosition": [448, 807],
+            "guardPosition": [416, 816],
             "health": 5
         },
         {
-            "position": [119, 554],
+            "position": [432, 832],
             "mode": "guard",
-            "guardPosition": [119, 554],
+            "guardPosition": [432, 832],
             "health": 5
         },
         {
-            "position": [168, 554],
+            "position": [448, 816],
             "mode": "guard",
-            "guardPosition": [168, 554],
+            "guardPosition": [448, 816],
             "health": 5
         },
         {
-            "position": [384, 152],
+            "position": [464, 832],
             "mode": "guard",
-            "guardPosition": [384, 152],
+            "guardPosition": [464, 832],
             "health": 5
         },
         {
-            "position": [264, 200],
+            "position": [480, 816],
             "mode": "guard",
-            "guardPosition": [264, 200],
+            "guardPosition": [480, 816],
+            "health": 5
+        },
+        {
+            "position": [496, 832],
+            "mode": "guard",
+            "guardPosition": [496, 832],
+            "health": 5
+        },
+        {
+            "position": [432, 560],
+            "mode": "guard",
+            "guardPosition": [432, 560],
+            "health": 5
+        },
+        {
+            "position": [480, 560],
+            "mode": "guard",
+            "guardPosition": [480, 560],
+            "health": 5
+        },
+        {
+            "position": [656, 256],
+            "mode": "guard",
+            "guardPosition": [656, 256],
+            "health": 5
+        },
+        {
+            "position": [704, 256],
+            "mode": "guard",
+            "guardPosition": [704, 256],
+            "health": 5
+        },
+        {
+            "position": [480, 560],
+            "mode": "guard",
+            "guardPosition": [480, 560],
+            "health": 5
+        },
+        {
+            "position": [608, 192],
+            "mode": "guard",
+            "guardPosition": [608, 192],
+            "health": 5
+        },
+        {
+            "position": [608, 240],
+            "mode": "guard",
+            "guardPosition": [608, 240],
+            "health": 5
+        },
+        {
+            "position": [432, 304],
+            "mode": "guard",
+            "guardPosition": [432, 304],
+            "health": 5
+        },
+        {
+            "position": [480, 304],
+            "mode": "guard",
+            "guardPosition": [480, 304],
+            "health": 5
+        },
+        {
+            "position": [176, 688],
+            "mode": "guard",
+            "guardPosition": [176, 688],
+            "health": 5
+        },
+        {
+            "position": [176, 640],
+            "mode": "guard",
+            "guardPosition": [176, 640],
+            "health": 5
+        },
+        {
+            "position": [208, 320],
+            "mode": "guard",
+            "guardPosition": [208, 320],
             "health": 5
         }
     ]

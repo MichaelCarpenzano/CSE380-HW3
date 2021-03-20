@@ -39,7 +39,7 @@ export default class Alert extends EnemyState {
 
     }
 
-    // HOMEWORK 3 - TODO
+    // HOMEWORK 3 - TODO-DONE
     /**
      * While in the alert state, an enemy should move towards the target position received in onEnter.
      * 

@@ -51,9 +51,9 @@ export default class hw3_scene extends Scene {
         this.load.spritesheet("enemy", "hw3_assets/spritesheets/enemy.json");
 
         // Load the tilemap
-        // HOMEWORK 3 - TODO
+        // HOMEWORK 3 - TODO-DONE
         // Change this file to be your own tilemap
-        this.load.tilemap("level", "hw3_assets/tilemaps/TopDown_hw3.json");
+        this.load.tilemap("level", "hw3_assets/tilemaps/HW3_TopDownMap.json");
 
         // Load the scene info
         this.load.object("weaponData", "hw3_assets/data/weaponData.json");
@@ -253,7 +253,7 @@ export default class hw3_scene extends Scene {
 
         // Create the player
         this.player = this.add.animatedSprite("player", "primary");
-        this.player.position.set(2*16, 62*16);
+        this.player.position.set(26*16, 62*16);
         this.player.addPhysics(new AABB(Vec2.ZERO, new Vec2(5, 5)));
         this.player.addAI(PlayerController,
             {

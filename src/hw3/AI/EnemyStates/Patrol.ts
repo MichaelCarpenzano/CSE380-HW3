@@ -43,7 +43,7 @@ export default class Patrol extends EnemyState {
         }
     }
 
-    // HOMEWORK 3 - TODO
+    // HOMEWORK 3 - TODO-DONE
     /**
      * An enemy in the patrol state should move along its route.
      * The route is given to this state in its constructor.
